@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">首个应用</string>
+    <string name="action_settings">设置</string>
+    <string name="first_fragment_label">第一个片段</string>
+    <string name="second_fragment_label">第二个片段</string>
+    <string name="previous">以前的</string>
+    <string name="hello_first_fragment">0</string>
+    <string name="random_heading">这是一个介于 0 和</string>
+    <string name="first_choice_text">第一</string>
+    <string name="second_choice_text">第二</string>
+    <string name="third_choice_text">第三</string>
+    <string name="fourth_choice_text">第四</string>
+    <string name="answered_correctly">%1$d</string>
+    <string name="answered_all_questions">回答了所有问题</string>
+</resources>

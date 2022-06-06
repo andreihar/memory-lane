@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FirstApp</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">0</string>
+    <string name="random_heading">Here is a random number between 0 and %d.</string>
+    <string name="first_choice_text">First</string>
+    <string name="second_choice_text">Second</string>
+    <string name="third_choice_text">Third</string>
+    <string name="fourth_choice_text">Fourth</string>
+    <string name="answered_correctly">%1$d</string>
+    <string name="answered_all_questions">Answered all questions</string>
+</resources>
