@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">首個應用</string>
+    <string name="app_name">內存通道</string>
     <string name="action_settings">設置</string>
-    <string name="first_fragment_label">第一個片段</string>
-    <string name="second_fragment_label">第二個片段</string>
-    <string name="previous">以前的</string>
+    <string name="quiz_label">測驗</string>
+    <string name="main_menu_fragment_label">主菜單</string>
     <string name="hello_first_fragment">0</string>
-    <string name="random_heading">這是一個介於 0 和</string>
     <string name="first_choice_text">第一</string>
     <string name="second_choice_text">第二</string>
     <string name="third_choice_text">第三</string>
     <string name="fourth_choice_text">第四</string>
     <string name="answered_correctly">%1$d</string>
-    <string name="answered_all_questions">回答了所有問題</string>
+    <string name="answered_all_questions">您回答了所有問題</string>
+    <string name="loading">加載請稍候</string>
+    <string name="start_quiz">開始測驗</string>
+    <string name="back_to_menu">返回菜單</string>
 </resources>

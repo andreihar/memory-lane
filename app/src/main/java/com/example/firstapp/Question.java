@@ -1,10 +1,13 @@
 package com.example.firstapp;
 
+import java.io.File;
+
 public class Question {
-    private String question, first, second, third, fourth, answer, hint;
+    private String question, first, second, third, fourth, answer;
+    private int hint;
 
     // Constructor
-    public Question(String question, String first, String second, String third, String fourth, String answer, String hint) {
+    public Question(String question, String first, String second, String third, String fourth, String answer, int hint) {
         this.question = question;
         this.first = first;
         this.second = second;
@@ -63,11 +66,11 @@ public class Question {
         this.answer = answer;
     }
 
-    public String getHint() {
+    public int getHint() {
         return hint;
     }
 
-    public void setHint(String hint) {
+    public void setHint(int hint) {
         this.hint = hint;
     }
 }
