@@ -1,6 +1,8 @@
 package com.example.firstapp;
 
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +14,9 @@ import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.firstapp.databinding.FragmentMainMenuBinding;
 
+import org.w3c.dom.Text;
+
+import java.util.Locale;
 import java.util.Random;
 
 public class MainMenuFragment extends Fragment {

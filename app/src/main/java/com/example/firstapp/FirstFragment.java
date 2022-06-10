@@ -32,7 +32,7 @@ private FragmentFirstBinding binding;
     private TextToSpeech mTTS;
     private Random random;
     private int score = 0, questionBlockPosition = 0, questionPosition = 0;
-    private boolean firstIncorrect = false, TTSOn = false;
+    private boolean firstIncorrect = false, TTSOn = true;
     private MediaPlayer player; // Takes a lot of resources, create only where necessary
 
     @Override
@@ -43,23 +43,35 @@ private FragmentFirstBinding binding;
         // Inflate the Layout for this Fragment
         View fragmentFirstLayout = inflater.inflate(R.layout.fragment_first, container, false);
         // Initialise TextToSpeech
+        String googleTtsPackage = "com.google.android.tts", picoPackage = "com.svox.pico";
         mTTS = new TextToSpeech(getActivity(), new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int status) {
                 if (status == TextToSpeech.SUCCESS) {
-                    int result = mTTS.setLanguage(Locale.UK);
+                    int result;
+                    switch(Locale.getDefault().getLanguage()) {
+                        case "zh":
+                            if (Locale.getDefault().getCountry() == "TW")
+                                result = mTTS.setLanguage(new Locale("zh", "TW"));
+                            else
+                                result = mTTS.setLanguage(new Locale("zh", "CN"));
+                            break;
+                        case "pa":
+                            result = mTTS.setLanguage(new Locale("pa", "IN"));
+                        default:
+                            result = mTTS.setLanguage(new Locale("en", "GB"));
+                    }
                     if (result == TextToSpeech.LANG_MISSING_DATA // Check for supported languages
                             || result == TextToSpeech.LANG_NOT_SUPPORTED) {
-                        Log.e("TTS", "Language not supported");
-                    } else {
-                        TTSOn = true;
-                        TTSQuestion();
+                        Log.e("TTS", "Language not supported, set to default");
+                        mTTS.setLanguage(new Locale("en", "GB"));
                     }
+                    TTSQuestion();
                 } else {
                     Log.e("TTS", "Initialisation failed");
                 }
             }
-        });
+        }, googleTtsPackage);
 
         // Get the Count and Question TextView
         questionTV = fragmentFirstLayout.findViewById(R.id.question);
@@ -158,9 +170,9 @@ private FragmentFirstBinding binding;
     //              Hint and remaining Options after incorrect answer.
     // Precondition: TTS option is ON in settings
     // Postcondition: TTS appropriate text strings
+    // Exception: Throws TTSSleepInterruptedException if sleep() got interrupted.
     private void TTSQuestion() {
         stopPlayer(player);
-        System.out.println("The value of TTSOn = " + TTSOn);
         if (!TTSOn) {
             return;
         }
@@ -169,7 +181,12 @@ private FragmentFirstBinding binding;
         if (!firstIncorrect)
             mTTS.speak(questionTV.getText().toString(), TextToSpeech.QUEUE_ADD, null);
         if (firstIncorrect) {
-            mTTS.speak("Hint: ", TextToSpeech.QUEUE_ADD, null);
+            mTTS.speak(getString(R.string.hint_tts), TextToSpeech.QUEUE_ADD, null);
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                Log.e("TTS", "Sleep interrupted");
+            }
             player = MediaPlayer.create(getActivity(), quizModalArrayList.get(questionBlockPosition).getQuestionArray(questionPosition).getHint());
             player.start();
             player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
@@ -199,10 +216,9 @@ private FragmentFirstBinding binding;
     private void TTSQuestionButton(@NonNull Button button, int i) {
         // BUG: Colour changes despite button being disabled
         // IMPLEMENT: Highlight button while speak() is in progress
-        System.out.println(i + "is active: " + button.isEnabled());
         if (button.isEnabled() && button.getVisibility() == View.VISIBLE) {
             //button.setTextColor(getResources().getColor(R.color.highlight_button));
-            mTTS.speak("Option" + i + ":" + button.getText().toString(), TextToSpeech.QUEUE_ADD, null);
+            mTTS.speak(getString(R.string.option_tts) + i + ":" + button.getText().toString(), TextToSpeech.QUEUE_ADD, null);
             //button.setTextColor(getResources().getColor(R.color.white));
         }
     }
@@ -211,27 +227,29 @@ private FragmentFirstBinding binding;
     // Precondition: -
     // Postcondition: quizModalArray populated with questions
     private void getQuizQuestion(ArrayList<QuestionBlock> quizModalArrayList) {
-        Question questionOne = new Question("Who is it?", "Mum", "Mate", "Me", "Cornershop bossman", "Me", R.raw.hint1);
-        Question questionTwo = new Question("How old is he?", "16", "2", "9", "74", "74", R.raw.hint2);
-        Question questionThree = new Question("What's his ethnicity?", "Asian", "Caucasian", "Mongol", "Kyrgyz", "Asian", R.raw.hint3);
-        Question questionFour = new Question("His favourite UK rapper?", "Skepta", "Wiley", "Stormzy", "Himself", "Himself", R.raw.hint4);
-        Question questionFive = new Question("It's Unknown T", "Homerton B", "Gyalie on me", "Op block", "Bali on me", "Homerton B", R.raw.hint5);
+        Question questionOne, questionTwo, questionThree, questionFour, questionFive;
+        /*
+        questionOne = new Question("Who is it?", "Mum", "Mate", "Me", "Cornershop bossman", "Me", R.raw.hint1);
+        questionTwo = new Question("How old is he?", "16", "2", "9", "74", "74", R.raw.hint2);
+        questionThree = new Question("What's his ethnicity?", "Asian", "Caucasian", "Mongol", "Kyrgyz", "Asian", R.raw.hint3);
+        questionFour = new Question("His favourite UK rapper?", "Skepta", "Wiley", "Stormzy", "Himself", "Himself", R.raw.hint4);
+        questionFive = new Question("It's Unknown T", "Homerton B", "Gyalie on me", "Op block", "Bali on me", "Homerton B", R.raw.hint5);
         quizModalArrayList.add(new QuestionBlock(questionOne, questionTwo, questionThree, questionFour, questionFive, R.drawable.daboy));
-
-        questionOne = new Question("Dat boy is who?", "Future doc", "My G", "Taiwanren", "Burnaby S boy", "Taiwanren", R.raw.hint1);
-        questionTwo = new Question("City of birth?", "Tainan", "Taipei", "Taichung", "Taoyuan", "Tainan", R.raw.hint2);
-        questionThree = new Question("Calculus 12 grade?", "A", "A+", "A++", "A+++", "A+++", R.raw.hint3);
-        questionFour = new Question("Most complex 漢字 in Unicode?", "\uD869\uDEA5", "\uD869\uDEA3", "\uD869\uDEA4", "\uD869\uDEA2", "\uD869\uDEA5", R.raw.hint4);
-        questionFive = new Question("Anthem of Taiwan?", "San Min Zhuyi", "Yiyongjun Jinxingqu", "Gong Jin'ou", "Wuzu gonghe ge", "San Min Zhuyi", R.raw.hint5);
+*/
+        questionOne = new Question(getString(R.string.question1), getString(R.string.question11), getString(R.string.question12), getString(R.string.question13), getString(R.string.question14), getString(R.string.question13), R.raw.hint1);
+        questionTwo = new Question(getString(R.string.question2), getString(R.string.question21), getString(R.string.question22), getString(R.string.question23), getString(R.string.question24), getString(R.string.question21), R.raw.hint2);
+        questionThree = new Question(getString(R.string.question3), getString(R.string.question31), getString(R.string.question32), getString(R.string.question33), getString(R.string.question34), getString(R.string.question34), R.raw.hint3);
+        questionFour = new Question(getString(R.string.question4), getString(R.string.question41), getString(R.string.question42), getString(R.string.question43), getString(R.string.question44), getString(R.string.question41), R.raw.hint4);
+        questionFive = new Question(getString(R.string.question5), getString(R.string.question51), getString(R.string.question52), getString(R.string.question53), getString(R.string.question54), getString(R.string.question51), R.raw.hint5);
         quizModalArrayList.add(new QuestionBlock(questionOne, questionTwo, questionThree, questionFour, questionFive, R.drawable.taiwanren));
-
+        /*
         questionOne = new Question("Who dat?", "My mate on teli", "Trump", "MP of UK", "Alien", "My mate on teli", R.raw.hint1);
         questionTwo = new Question("What is he famous for?", "Tallest man", "Nothing", "best nba player", "Everything", "Nothing", R.raw.hint2);
         questionThree = new Question("It's 3 am I wanna go sleep", "The last", "Questions", "Won't make", "Any sense", "Any sense", R.raw.hint3);
         questionFour = new Question("?", "=(", "=)", "=/", "=|", "=)", R.raw.hint4);
         questionFive = new Question("Best anime?", "Boku no piku", "Initial D", "Oreimo", "Pokemon", "Initial D", R.raw.hint5);
         quizModalArrayList.add(new QuestionBlock(questionOne, questionTwo, questionThree, questionFour, questionFive, R.drawable.teliman));
-
+*/
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
@@ -249,7 +267,7 @@ private FragmentFirstBinding binding;
     // Description: Disconnects from TTS engine
     // Precondition: mTTS exists
     // Postcondition: App disconnected from TTS engine
-@Override
+    @Override
     public void onDestroyView() {
         if (mTTS != null) {
             mTTS.stop();

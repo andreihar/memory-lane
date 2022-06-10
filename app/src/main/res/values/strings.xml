@@ -14,4 +14,33 @@
     <string name="loading">Loading... Please Wait</string>
     <string name="back_to_menu">Back to Menu</string>
     <string name="start_quiz">Start Quiz</string>
+    <string name="hint_tts">Hint: </string>
+    <string name="option_tts">Option</string>
+
+    <!-- Question strings FOR TESTING -->
+    <string name="question1">Who is this boy?</string>
+    <string name="question11">Future doc</string>
+    <string name="question12">My G</string>
+    <string name="question13">Taiwanren</string>
+    <string name="question14">Burnaby S boy</string>
+    <string name="question2">City of birth?</string>
+    <string name="question21">Tainan</string>
+    <string name="question22">Taipei</string>
+    <string name="question23">Taichung</string>
+    <string name="question24">Taoyuan</string>
+    <string name="question3">Calculus 12 grade?</string>
+    <string name="question31">A</string>
+    <string name="question32">A+</string>
+    <string name="question33">A++</string>
+    <string name="question34">A+++</string>
+    <string name="question4">Most complex hanzi?</string>
+    <string name="question41">Correct</string>
+    <string name="question42">Incorrect</string>
+    <string name="question43">Maybe correct</string>
+    <string name="question44">Wrong</string>
+    <string name="question5">Anthem of Taiwan?</string>
+    <string name="question51">San Min Zhuyi</string>
+    <string name="question52">Yiyongjun Jinxingqu</string>
+    <string name="question53">Gong Jinou</string>
+    <string name="question54">Wuzu gonghe ge</string>
 </resources>
