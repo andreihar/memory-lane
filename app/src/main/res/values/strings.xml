@@ -1,46 +1,90 @@
 <resources>
-    <string name="app_name">Memory Lane</string>
+    <string name="app_name" translatable="false">Memory Lane</string>
     <string name="action_settings">Settings</string>
+
     <!-- Strings used for fragments for navigation -->
-    <string name="quiz_label">Quiz</string>
+    <string name="quiz">Quiz</string>
     <string name="main_menu_fragment_label">Main Menu</string>
-    <string name="hello_first_fragment">0</string>
     <string name="first_choice_text">First</string>
     <string name="second_choice_text">Second</string>
     <string name="third_choice_text">Third</string>
     <string name="fourth_choice_text">Fourth</string>
-    <string name="answered_correctly">%1$d</string>
     <string name="answered_all_questions">Answered all questions</string>
-    <string name="loading">Loading... Please Wait</string>
+    <string name="loading">Loading… Please Wait</string>
     <string name="back_to_menu">Back to Menu</string>
     <string name="start_quiz">Start Quiz</string>
     <string name="hint_tts">Hint: </string>
     <string name="option_tts">Option</string>
+    <string name="tap_to_continue">Tap to Continue</string>
+    <string name="next_question">Next Question</string>
+    <string name="video_close">Close</string>
+    <string name="restart_quiz">Restart</string>
+    <string name="start_premade_quiz">Start Pre-made Quiz</string>
+    <string name="no_wifi">Please check Internet connection</string>
+    <string name="no_questions">Currently there are no question sets in the quiz</string>
 
-    <!-- Question strings FOR TESTING -->
-    <string name="question1">Who is this boy?</string>
-    <string name="question11">Future doc</string>
-    <string name="question12">My G</string>
-    <string name="question13">Taiwanren</string>
-    <string name="question14">Burnaby S boy</string>
-    <string name="question2">City of birth?</string>
-    <string name="question21">Tainan</string>
-    <string name="question22">Taipei</string>
-    <string name="question23">Taichung</string>
-    <string name="question24">Taoyuan</string>
-    <string name="question3">Calculus 12 grade?</string>
-    <string name="question31">A</string>
-    <string name="question32">A+</string>
-    <string name="question33">A++</string>
-    <string name="question34">A+++</string>
-    <string name="question4">Most complex hanzi?</string>
-    <string name="question41">Correct</string>
-    <string name="question42">Incorrect</string>
-    <string name="question43">Maybe correct</string>
-    <string name="question44">Wrong</string>
-    <string name="question5">Anthem of Taiwan?</string>
-    <string name="question51">San Min Zhuyi</string>
-    <string name="question52">Yiyongjun Jinxingqu</string>
-    <string name="question53">Gong Jinou</string>
-    <string name="question54">Wuzu gonghe ge</string>
+    <!-- Settings -->
+    <string name="restart_application">Please, restart the application to apply any changes</string>
+    <string name="text_to_speech">Text-to-speech</string>
+    <string name="tts_summary">Play the text in the quiz aloud</string>
+    <string name="pitch">Pitch</string>
+    <string name="pitch_summary">Pitch level of the voice</string>
+    <string name="speed">Speed</string>
+    <string name="speed_summary">Speed level of the voice</string>
+    <string name="hint">Hint</string>
+    <string name="text_hint">Text Hint</string>
+    <string name="text_hint_summary">Show the transcription of the hint</string>
+    <string name="transliteration">Transliteration</string>
+    <string name="transliteration_summary_on">Works only for Chinese language</string>
+    <string name="transliteration_summary_off">Works only for Chinese language</string>
+
+    <!-- Create Quiz -->
+    <string name="create_quiz">Create/Edit Quiz</string>
+    <string name="write_the_question">Write the Question</string>
+    <string name="option_1">Option 1</string>
+    <string name="option_2">Option 2</string>
+    <string name="option_3">Option 3</string>
+    <string name="option_4">Option 4</string>
+    <string name="write_the_hint">Write the Hint</string>
+    <string name="save">Save</string>
+    <string name="question_set">Question Set</string>
+    <string name="add_image">Add Image</string>
+    <string name="add_questions">Add Questions</string>
+    <string name="add_video">Add Video</string>
+    <string name="reupload_video">Reupload Video</string>
+    <string name="add_audio_hint">Add Audio Hint</string>
+    <string name="home">Home</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="start_record">Start Record</string>
+    <string name="start_record_inst">Hold to record</string>
+    <string name="stop_record">Stop Record</string>
+    <string name="stop_record_inst">Release to end record</string>
+    <string name="save_hint">Save or Record again</string>
+    <string name="save_hint_inst">You can listen to record and save, or record again</string>
+    <string name="title_choose">Choose</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="title_camera">Camera</string>
+    <string name="title_gallery">Gallery</string>
+    <string name="title_record">Record</string>
+    <string name="title_files">Files</string>
+    <string name="question_saved">Question saved</string>
+    <string name="question_created">Question created</string>
+    <string name="error_fill_out_fields">Please fill out all fields and choose the correct option for the question</string>
+    <string name="question_set_create">Create new question set</string>
+    <string name="question_set_title">Question Sets</string>
+    <string name="more_than_five">The question set can\'t have more than five questions</string>
+    <string name="question_set_saved">Question Set is filled out and saved</string>
+    <string name="question_set_draft">Question Set draft is saved</string>
+    <!-- Uploading -->
+    <string name="uploaded">The file has been uploaded</string>
+    <string name="upload_failed">"Uploading failed"</string>
+    <string name="uploading">Uploading…</string>
+    <string name="permission_required">Please give permission</string>
+    <string name="upload_wait">Please Wait…</string>
+    <string name="unknown_error">Unknown error occurred, please try again</string>
+
+
+    <!-- Analysis -->
+    <string name="analysis">Analysis</string>g
+    <string name="pie_chart_title">Distribution of Question Sets Answered Correctly</string>
 </resources>

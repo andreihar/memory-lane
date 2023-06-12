@@ -1,0 +1,49 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Preference app:title="@string/restart_application" />
+
+    <PreferenceCategory app:title="@string/text_to_speech">
+
+        <SwitchPreferenceCompat
+            app:key="tts_on"
+            app:defaultValue="1"
+            app:summary="@string/tts_summary"
+            app:title="@string/text_to_speech" />
+
+        <SeekBarPreference
+            app:dependency="tts_on"
+            app:key="seek_bar_pitch"
+            app:summary="@string/pitch_summary"
+            app:title="@string/pitch"
+            app:defaultValue="50" />
+
+        <SeekBarPreference
+            app:dependency="tts_on"
+            app:key="seek_bar_speed"
+            app:summary="@string/speed_summary"
+            app:title="@string/speed"
+            app:defaultValue="50" />
+
+    </PreferenceCategory>
+    <PreferenceCategory app:title="@string/hint">
+
+        <SwitchPreferenceCompat
+            app:key="hint_text"
+            app:defaultValue="1"
+            app:summary="@string/text_hint_summary"
+            app:title="@string/text_hint" />
+
+    </PreferenceCategory>
+    <PreferenceCategory app:title="@string/transliteration">
+
+        <SwitchPreferenceCompat
+            app:key="romanisation_on"
+            app:defaultValue="0"
+            app:summaryOn="@string/transliteration_summary_on"
+            app:summaryOff="@string/transliteration_summary_off"
+            app:title="@string/transliteration" />
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

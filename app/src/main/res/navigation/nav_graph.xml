@@ -7,19 +7,23 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.example.firstapp.FirstFragment"
-        android:label="@string/quiz_label"
+        android:name="com.itjustworks.memorylane.FirstFragment"
+        android:label="@string/quiz"
         tools:layout="@layout/fragment_first" >
 
         <action
             android:id="@+id/action_FirstFragment_to_MainMenuFragment"
             app:destination="@id/SecondFragment" />
+        <argument
+            android:name="quizType"
+            app:argType="string"
+            android:defaultValue="premadeQuiz" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.example.firstapp.MainMenuFragment"
+        android:name="com.itjustworks.memorylane.MainMenuFragment"
         android:label="@string/main_menu_fragment_label"
-        tools:layout="@layout/fragment_main_menu" >
+        tools:layout="@layout/fragment_main_menu">
 
         <action
             android:id="@+id/action_MainMenuFragment_to_FirstFragment"
@@ -28,4 +32,9 @@
             android:name="myArg"
             app:argType="integer" />
     </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.itjustworks.memorylane.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
 </navigation>

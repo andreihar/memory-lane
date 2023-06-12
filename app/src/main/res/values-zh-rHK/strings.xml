@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">設置</string>
+    <string name="main_menu_fragment_label">主菜單</string>
+    <string name="first_choice_text">第一</string>
+    <string name="second_choice_text">第二</string>
+    <string name="third_choice_text">第三</string>
+    <string name="fourth_choice_text">第四</string>
+    <string name="answered_all_questions">你答咗所有問題</string>
+    <string name="loading">加載請稍候</string>
+    <string name="start_quiz">開始測試</string>
+    <string name="back_to_menu">返回菜單</string>
+    <string name="hint_tts">貼士：</string>
+    <string name="option_tts">選項</string>
+    <string name="tap_to_continue">點擊繼續</string>
+    <string name="create_quiz">創建/修改測試</string>
+    <string name="quiz">測試</string>
+    <string name="write_the_question">寫下問題</string>
+    <string name="option_1">選項 1</string>
+    <string name="option_2">選項 2</string>
+    <string name="option_3">選項 3</string>
+    <string name="option_4">選項 4</string>
+    <string name="write_the_hint">寫下顯示</string>
+    <string name="save">存擋</string>
+    <string name="question_set">問題組</string>
+    <string name="add_image">添加圖片</string>
+    <string name="add_questions">添加問題</string>
+    <string name="transliteration">粵拼</string>
+    <string name="title_activity_settings">設置</string>
+    <string name="next_question">下一個問題</string>
+    <string name="text_to_speech">文字轉語音</string>
+    <string name="pitch">音調</string>
+    <string name="speed">速度</string>
+    <string name="tts_summary">大聲播放測試中嘅字</string>
+    <string name="pitch_summary">音調聲</string>
+    <string name="speed_summary">聲嘅速度等級</string>
+    <string name="hint">顯示</string>
+    <string name="text_hint">文字顯示</string>
+    <string name="text_hint_summary">顯示顯示嘅轉錄</string>
+    <string name="transliteration_summary_on">以粵拼顯示字</string>
+    <string name="transliteration_summary_off">以漢字顯示字</string>
+    <string name="restart_application">唔該重新啟動應用程式以應用任何更改</string>
+    <string name="add_video">添加視頻</string>
+    <string name="add_audio_hint">添加音訊顯示</string>
+    <string name="home">主頁面</string>
+
+    <string name="start_record">開始紀錄</string>
+    <string name="start_record_inst">按住錄音</string>
+    <string name="stop_record">閘住紀錄</string>
+    <string name="stop_record_inst">放開結束紀錄</string>
+    <string name="save_hint">再次保存或者錄製</string>
+    <string name="save_hint_inst">你可以收聽錄音並保存或者重新錄音</string>
+    <string name="title_choose">揀</string>
+    <string name="action_cancel">取消</string>
+    <string name="title_camera">相機</string>
+    <string name="title_gallery">畫廊</string>
+    <string name="title_record">紀錄</string>
+    <string name="title_files">文件</string>
+    <string name="question_saved">已經擺問題</string>
+    <string name="question_created">已經創建問題</string>
+    <string name="error_fill_out_fields">唔該填所有資料欄並為問題選擇正確嘅選項</string>
+    <string name="uploaded">文件已上載</string>
+    <string name="upload_failed">上載失敗</string>
+    <string name="uploading">正上載…</string>
+    <string name="question_set_create">創建新嘅問題組</string>
+    <string name="question_set_draft">問題組草稿已經擺</string>
+    <string name="question_set_saved">問題組已經填並保存</string>
+    <string name="question_set_title">問題組</string>
+    <string name="more_than_five">應該問題組唔超過五個問題</string>
+    <string name="video_close">關掉</string>
+    <string name="restart_quiz">重新開始</string>
+    <string name="start_premade_quiz">開始預製測驗</string>
+
+    <!-- Analysis -->
+    <string name="analysis">分析</string>
+    <string name = "pie_chart_title"> 正確答嘅問題集分佈</string>
+    <string name="permission_required">唔該比權限</string>
+    <string name="upload_wait">唔該等陣…</string>
+    <string name="unknown_error">發生未知錯誤，唔該重試</string>
+    <string name="reupload_video">重新上載視頻</string>
+    <string name="no_wifi">唔該檢查互聯網鏈接</string>
+    <string name="no_questions">目前測驗中冇問題集</string>
+
+</resources>

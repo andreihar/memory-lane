@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <integer name="max_characters_in_write_questions">30</integer>
+</resources>

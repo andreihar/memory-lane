@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "971506160008",
+    "project_id": "memorylane-f394d",
+    "storage_bucket": "memorylane-f394d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:971506160008:android:b2f2a58994f06777ff6a3d",
+        "android_client_info": {
+          "package_name": "com.itjustworks.memorylane"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "971506160008-grsg4osfc234nvda9kgu0mgu2o3d2uqg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsXpPRqWUr81nRzFiYH_iEr7paKIj5Zg8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "971506160008-grsg4osfc234nvda9kgu0mgu2o3d2uqg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -4,11 +4,17 @@
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
+    <color name="teal_700">#023934</color>
+    <color name="green_200">#73BA5E</color>
+    <color name="green_700">#26471C</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="screenBackground">#2196F3</color>
-    <color name="buttonBackground">#BBDEFB</color>
-    <color name="screenBackground2">#26C6DA</color>
-    <color name="highlight_button">#E60C0C</color>
+    <color name="screen_background">#E4E4E4</color>
+    <color name="button_background">#014F53</color>
+    <color name="highlight_button">#512B8F</color>
+    <color name="record_ready">#FE4052</color>
+    <color name="record_process">#FF132A</color>
+    <color name="record_done">#3FC160</color>
+    <color name="question_set">#123213</color>
+    <color name="quiz_selector_colour">#FFFFFF</color>
 </resources>

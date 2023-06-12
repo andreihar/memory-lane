@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">Réglages</string>
+    <string name="main_menu_fragment_label">Menu principal</string>
+    <string name="first_choice_text">Premier</string>
+    <string name="second_choice_text">Deuxième</string>
+    <string name="third_choice_text">Troisième</string>
+    <string name="fourth_choice_text">Quatrième</string>
+    <string name="answered_all_questions">A répondu à toutes les questions</string>
+    <string name="loading">Chargement… Veuillez patienter</string>
+    <string name="back_to_menu">Retour au menu</string>
+    <string name="start_quiz">Démarrer le questionnaire</string>
+    <string name="hint_tts">Astuce: </string>
+    <string name="option_tts">Option</string>
+    <string name="tap_to_continue">Appuyez pour Continuer</string>
+    <string name="create_quiz">Créer/Modifier un questionnaire</string>
+    <string name="quiz">Questionnaire</string>
+    <string name="write_the_question">Écris la question</string>
+    <string name="option_1">Option 1</string>
+    <string name="option_2">Option 2</string>
+    <string name="option_3">Variante 3</string>
+    <string name="option_4">Variante 4</string>
+    <string name="write_the_hint">Blanchir l\'indice</string>
+    <string name="save">sauvegarder</string>
+    <string name="question_set">Ensemble de questions</string>
+    <string name="add_image">Ajouter une image</string>
+    <string name="add_questions">Ajouter des questions</string>
+    <string name="transliteration">Translitération</string>
+    <string name="title_activity_settings">Réglages</string>
+    <string name="next_question">Question suivante</string>
+    <string name="text_to_speech">Texte pour parler</string>
+    <string name="pitch">Hauteur</string>
+    <string name="speed">La rapidité</string>
+    <string name="tts_summary">Jouez le texte du quiz à haute voix</string>
+    <string name="pitch_summary">Niveau de hauteur de la voix</string>
+    <string name="speed_summary">Niveau de vitesse de la voix</string>
+    <string name="hint">Indice</string>
+    <string name="text_hint">Indice de texte</string>
+    <string name="text_hint_summary">Afficher la transcription de l\'indice</string>
+    <string name="transliteration_summary_on">Fonctionne uniquement pour la langue chinoise</string>
+    <string name="transliteration_summary_off">Fonctionne uniquement pour la langue chinoise</string>
+    <string name="restart_application">Veuillez redémarrer l\'application pour appliquer les modifications</string>
+    <string name="add_video">Ajouter une vidéo</string>
+    <string name="add_audio_hint">Ajouter un indice audio</string>
+    <string name="home">Maison</string>
+
+
+    <string name="start_record">Démarrer l\'enregistrement</string>
+    <string name="start_record_inst">Maintenez pour enregistrer</string>
+    <string name="stop_record">Arrêter l\'enregistrement</string>
+    <string name="stop_record_inst">Relâcher pour terminer l\'enregistrement</string>
+    <string name="save_hint">Enregistrer ou enregistrer à nouveau</string>
+    <string name="save_hint_inst">Vous pouvez écouter enregistrer et sauvegarder, ou enregistrer à nouveau</string>
+    <string name="title_choose">Choisir</string>
+    <string name="action_cancel">Annuler</string>
+    <string name="title_camera">Caméra</string>
+    <string name="title_gallery">Galerie</string>
+    <string name="title_record">Enregistrement</string>
+    <string name="title_files">Des dossiers</string>
+    <string name="question_saved">Question enregistrée</string>
+    <string name="question_created">Question créée</string>
+    <string name="error_fill_out_fields">Veuillez remplir tous les champs et choisir la bonne option pour la question</string>
+    <string name="uploaded">Le fichier a été téléchargé</string>
+    <string name="upload_failed">Le téléchargement a échoué</string>
+    <string name="uploading">Téléchargement…</string>
+    <string name="question_set_create">Créer un nouvel ensemble de questions</string>
+    <string name="question_set_draft">Le brouillon de l\'ensemble de questions est enregistré</string>
+    <string name="question_set_saved">L\'ensemble de questions est rempli et enregistré</string>
+    <string name="question_set_title">Ensembles de questions</string>
+    <string name="more_than_five">La question ne peut pas avoir plus de cinq questions</string>
+    <string name="video_close">Proche</string>
+    <string name="restart_quiz">Redémarrer</string>
+    <string name="start_premade_quiz">Démarrer le quiz prédéfini</string>
+
+    <!-- Analysis -->
+    <string name="analysis">Analyse</string>
+    <string name = "pie_chart_title">Répartition des Ensembles de Questions Ayant Répondu Correctement</string>
+    <string name="permission_required">Veuillez donner la permission</string>
+    <string name="upload_wait">S\'il vous plaît, attendez…</string>
+    <string name="unknown_error">Une erreur inconnue s\'est produite, veuillez réessayer</string>
+    <string name="reupload_video">Re-téléchargé la video</string>
+    <string name="no_wifi">Veuillez vérifier la connexion Internet</string>
+    <string name="no_questions">Actuellement, il n\'y a pas d\'ensembles de questions dans le quiz</string>
+</resources>
