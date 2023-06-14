@@ -1,6 +1,6 @@
 <!-- PROJECT SHIELDS -->
-[![Contributors](https://img.shields.io/badge/Contributors-5-44cc11?style=for-the-badge)](https://circuitverse.org/slack)
-[![Release](https://img.shields.io/github/v/release/aral1q/MemoryLane?color=38618c&style=for-the-badge)](https://github.com/aral1q/MemoryLane/releases)
+![Contributors][contributors-badge]
+[![Release][release-badge]][release]
 
 
 
@@ -188,3 +188,10 @@ The user can view a pie chart that shows which question sets they recognise best
 
 - [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart) - used to generate a pie chart for the Randomisation Algorithm analysis
 - [Image Picker](https://github.com/Dhaval2404/ImagePicker) - used to enable users uploading and editing images for the Questions Creation
+
+
+
+<!-- MARKDOWN LINKS -->
+[contributors-badge]: https://img.shields.io/badge/Contributors-5-44cc11?style=for-the-badge
+[release-badge]: https://img.shields.io/github/v/release/aral1q/MemoryLane?color=38618c&style=for-the-badge
+[release]: https://github.com/aral1q/MemoryLane/releases
