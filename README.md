@@ -7,7 +7,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/aral1q/MemoryLane">
+  <a href="https://github.com/andreihar/MemoryLane">
     <img src="app/src/main/res/drawable-v24/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -16,9 +16,9 @@
   <p align="center">A trip to the Past</p>
 
   <p align="center">
-    <a href="https://github.com/aral1q/MemoryLane/releases/download/v4.0.0/memorylane.apk">apk File</a>
+    <a href="https://github.com/andreihar/MemoryLane/releases/download/v4.0.0/memorylane.apk">apk File</a>
     ·
-    <a href="https://github.com/aral1q/MemoryLane/archive/refs/tags/v4.0.0.zip">Source File</a>
+    <a href="https://github.com/andreihar/MemoryLane/archive/refs/tags/v4.0.0.zip">Source File</a>
   </p>
 </div>
 
@@ -193,5 +193,5 @@ The user can view a pie chart that shows which question sets they recognise best
 
 <!-- MARKDOWN LINKS -->
 [contributors-badge]: https://img.shields.io/badge/Contributors-5-44cc11?style=for-the-badge
-[release-badge]: https://img.shields.io/github/v/release/aral1q/MemoryLane?color=38618c&style=for-the-badge
-[release]: https://github.com/aral1q/MemoryLane/releases
+[release-badge]: https://img.shields.io/github/v/release/andreihar/MemoryLane?color=38618c&style=for-the-badge
+[release]: https://github.com/andreihar/MemoryLane/releases
