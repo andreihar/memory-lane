@@ -1,9 +1,3 @@
-<!-- PROJECT SHIELDS -->
-![Contributors][contributors-badge]
-[![Release][release-badge]][release]
-
-
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -11,9 +5,13 @@
     <img src="app/src/main/res/drawable-v24/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Memory Lane</h3>
+  ### Memory Lane
 
-  <p align="center">A trip to the Past</p>
+  A trip to the Past
+
+  <!-- PROJECT SHIELDS -->
+  [![Contributors][contributors-badge]][contributors]
+  [![Release][release-badge]][release]
 
   <p align="center">
     <a href="https://github.com/andreihar/memory-lane/releases/download/v4.0.0/memory-lane.apk">apk File</a>
@@ -193,5 +191,6 @@ The user can view a pie chart that shows which question sets they recognise best
 
 <!-- MARKDOWN LINKS -->
 [contributors-badge]: https://img.shields.io/badge/Contributors-5-44cc11?style=for-the-badge
+[contributors]: #contributors
 [release-badge]: https://img.shields.io/github/v/release/andreihar/memory-lane?color=38618c&style=for-the-badge
 [release]: https://github.com/andreihar/memory-lane/releases
