@@ -1,53 +1,49 @@
 <!-- PROJECT LOGO -->
-<br />
 <div align="center">
-  <a href="https://github.com/andreihar/memory-lane">
-    <img src="app/src/main/res/drawable-v24/logo.png" alt="Logo" width="80" height="80">
-  </a>
+    <a href="https://github.com/andreihar/memory-lane">
+        <img src="app/src/main/res/drawable-v24/logo.png" alt="Logo" width="80" height="80">
+    </a>
+    
+### Memory Lane
+    
+**A trip to the Past**
 
-  ### Memory Lane
+<!-- PROJECT SHIELDS -->
+[![Contributors][contributors-badge]][contributors]
+[![Release][release-badge]][release]
 
-  A trip to the Past
-
-  <!-- PROJECT SHIELDS -->
-  [![Contributors][contributors-badge]][contributors]
-  [![Release][release-badge]][release]
-
-  <p align="center">
-    <a href="https://github.com/andreihar/memory-lane/releases/download/v4.0.0/memory-lane.apk">apk File</a>
-    ·
-    <a href="https://github.com/andreihar/memory-lane/archive/refs/tags/v4.0.0.zip">Source File</a>
-  </p>
+[apk File][apk-file] ·
+[Source File][source-file]
 </div>
 
 
 
 <!-- TABLE OF CONTENTS -->
 <details open>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li><a href="#about-the-project">About The Project</a></li>
-    <li>
-      <a href="#features">Features</a>
-      <ul>
-        <li><a href="#quiz">Quiz</a></li>
-        <li><a href="#text-to-speech">Text-to-speech</a></li>
+    <summary>Table of Contents</summary>
+    <ol>
+        <li><a href="#about-the-project">About The Project</a></li>
         <li>
-          <a href="#questions-creation">Questions Creation</a>
-          <ul>
-            <li><a href="#audio-recorder">Audio Recorder</a></li>
-          </ul>
+            <a href="#features">Features</a>
+            <ul>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#text-to-speech">Text-to-speech</a></li>
+                <li>
+                    <a href="#questions-creation">Questions Creation</a>
+                    <ul>
+                        <li><a href="#audio-recorder">Audio Recorder</a></li>
+                    </ul>
+                </li>
+                <li><a href="#database">Database</a></li>
+                <li><a href="#multi-language-support">Multi-language Support</a></li>
+                <li><a href="#transliteration">Transliteration</a></li>
+                <li><a href="#spaced-repetition">Spaced Repetition</a></li>
+            </ul>
         </li>
-        <li><a href="#database">Database</a></li>
-        <li><a href="#multi-language-support">Multi-language Support</a></li>
-        <li><a href="#transliteration">Transliteration</a></li>
-        <li><a href="#spaced-repetition">Spaced Repetition</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Screenshots</a></li>
-    <li><a href="#roadmap">Contributors</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
-  </ol>
+        <li><a href="#usage">Screenshots</a></li>
+        <li><a href="#roadmap">Contributors</a></li>
+        <li><a href="#acknowledgements">Acknowledgements</a></li>
+    </ol>
 </details>
 
 
@@ -194,3 +190,5 @@ The user can view a pie chart that shows which question sets they recognise best
 [contributors]: #contributors
 [release-badge]: https://img.shields.io/github/v/release/andreihar/memory-lane?color=38618c&style=for-the-badge
 [release]: https://github.com/andreihar/memory-lane/releases
+[apk-file]: https://github.com/andreihar/memory-lane/releases/download/v4.0.0/memory-lane.apk
+[source-file]: https://github.com/andreihar/memory-lane/archive/refs/tags/v4.0.0.zip
