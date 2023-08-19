@@ -1,49 +1,63 @@
-<!-- PROJECT LOGO -->
-<div align="center">
-    <a href="https://github.com/andreihar/memory-lane">
-        <img src="app/src/main/res/drawable-v24/logo.png" alt="Logo" width="80" height="80">
-    </a>
-    
-### Memory Lane
-    
-**A trip to the Past**
-
 <!-- PROJECT SHIELDS -->
 [![Contributors][contributors-badge]][contributors]
 [![Release][release-badge]][release]
 
-[apk File][apk-file] ·
+
+
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/andreihar/memory-lane">
+    <img src="app/src/main/res/drawable-v24/logo.png" alt="Logo" width="80" height="80">
+  </a>
+  
+# Memory Lane
+  
+**A trip to the Past**
+
+An Android mobile application that uses quiz-like exercises to provide reminiscence therapy for people with dementia.
+
+[apk File][apk-file] •
 [Source File][source-file]
 </div>
 
 
 
+---
+
+
+
 <!-- TABLE OF CONTENTS -->
 <details open>
-    <summary>Table of Contents</summary>
-    <ol>
-        <li><a href="#about-the-project">About The Project</a></li>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#features">Features</a>
+      <ul>
+        <li><a href="#quiz">Quiz</a></li>
+        <li><a href="#text-to-speech">Text-to-speech</a></li>
         <li>
-            <a href="#features">Features</a>
-            <ul>
-                <li><a href="#quiz">Quiz</a></li>
-                <li><a href="#text-to-speech">Text-to-speech</a></li>
-                <li>
-                    <a href="#questions-creation">Questions Creation</a>
-                    <ul>
-                        <li><a href="#audio-recorder">Audio Recorder</a></li>
-                    </ul>
-                </li>
-                <li><a href="#database">Database</a></li>
-                <li><a href="#multi-language-support">Multi-language Support</a></li>
-                <li><a href="#transliteration">Transliteration</a></li>
-                <li><a href="#spaced-repetition">Spaced Repetition</a></li>
-            </ul>
+          <a href="#questions-creation">Questions Creation</a>
+          <ul>
+            <li><a href="#audio-recorder">Audio Recorder</a></li>
+          </ul>
         </li>
-        <li><a href="#usage">Screenshots</a></li>
-        <li><a href="#roadmap">Contributors</a></li>
-        <li><a href="#acknowledgements">Acknowledgements</a></li>
-    </ol>
+        <li><a href="#database">Database</a></li>
+        <li><a href="#multi-language-support">Multi-language Support</a></li>
+        <li><a href="#transliteration">Transliteration</a></li>
+        <li><a href="#spaced-repetition">Spaced Repetition</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Screenshots</a></li>
+    <li><a href="#roadmap">Contributors</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+  </ol>
 </details>
 
 
@@ -56,6 +70,10 @@ Memory Lane is the final project created by members of the ItJustWorks team for 
 The mobile application aims to enhance the quality of everyday life of people with dementia (PWD) by using reminiscence therapy. The purpose of reminiscence therapy is to help PWD recall moments of their past and the times spent with close friends, family members, and caregivers. This therapy has been shown to improve the quality of life in PWD by reducing stress, increasing their self-esteem, and helping them reconnect with memories of their life.
 
 Memory Lane challenges users to recognise randomly chosen images of individuals or memorabilia and strengthen connections with memories pertaining to these individuals or memorabilia through questions presented in the application. By doing so, the application aims to reduce cognitive decline while achieving the benefits of reminiscence therapy.
+
+### Built With
+
+* [![Firebase][firebase-badge]][firebase]
 
 
 
@@ -88,7 +106,7 @@ To ensure that the application supports those with moderate to moderately severe
 
 ### Questions Creation
 
-To modify the quiz, the user needs to provide an image, a video, and five questions for each question set. If any of the required information is missing, the question set will be saved as a draft until all the information is provided. The user can upload data from files saved on the mobile phone or use the image recorder, video recorder, and audio recorder features of the app to obtain the data. The [Image Picker](https://github.com/Dhaval2404/ImagePicker) library was used to implement the Image Recorder feature.
+To modify the quiz, the user needs to provide an image, a video, and five questions for each question set. If any of the required information is missing, the question set will be saved as a draft until all the information is provided. The user can upload data from files saved on the mobile phone or use the image recorder, video recorder, and audio recorder features of the app to obtain the data. The [Image Picker][imagepicker] library was used to implement the Image Recorder feature.
 
 <p align="center">
 <img src="readme/question_sets_list.jpg" alt="Quesiton Sets List" width="200">
@@ -158,7 +176,7 @@ To help Chinese speakers who are having trouble reading Chinese characters use t
 
 The order in which question sets are presented to the user upon starting the quiz is determined by Spaced repetition learning technique. This technique presents question sets that were erroneously recognised in past iterations based on the quiz's outcomes, giving the user extra opportunities to become familiar with the object of the question sets. The feature is implemented by storing weights for each item on the database and recalculating them during the process of completing the quiz.
 
-The user can view a pie chart that shows which question sets they recognise best. The [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart) library was used to implement the Analysis feature.
+The user can view a pie chart that shows which question sets they recognise best. The [MPAndroidChart][androidchart] library was used to implement the Analysis feature.
 
 <p align="center">
 <img src="readme/analysis.jpg" alt="Analysis" width="200">
@@ -169,7 +187,7 @@ The user can view a pie chart that shows which question sets they recognise best
 <!-- CONTRIBUTION -->
 ## Contributors
 
-- Andrei Harbachov
+- Andrei Harbachov ([GitHub][andrei-github] · [LinkedIn][andrei-linkedin])
 - Felicia Samatha
 - Karanbir Singh
 - Yuling Su
@@ -180,8 +198,8 @@ The user can view a pie chart that shows which question sets they recognise best
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-- [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart) - used to generate a pie chart for the Randomisation Algorithm analysis
-- [Image Picker](https://github.com/Dhaval2404/ImagePicker) - used to enable users uploading and editing images for the Questions Creation
+- [MPAndroidChart][androidchart] - used to generate a pie chart for the Randomisation Algorithm analysis
+- [Image Picker][imagepicker] - used to enable users uploading and editing images for the Questions Creation
 
 
 
@@ -192,3 +210,10 @@ The user can view a pie chart that shows which question sets they recognise best
 [release]: https://github.com/andreihar/memory-lane/releases
 [apk-file]: https://github.com/andreihar/memory-lane/releases/download/v4.0.0/memory-lane.apk
 [source-file]: https://github.com/andreihar/memory-lane/archive/refs/tags/v4.0.0.zip
+[firebase-badge]: https://img.shields.io/badge/Firebase-4c4c4c?style=for-the-badge&logo=firebase&logoColor=23039BE5
+[firebase]: https://firebase.google.com/
+[androidchart]: https://github.com/PhilJay/MPAndroidChart
+[imagepicker]: https://github.com/Dhaval2404/ImagePicker
+
+[andrei-linkedin]: https://www.linkedin.com/in/andrei-harbachov/
+[andrei-github]: https://github.com/andreihar
