@@ -1,9 +1,3 @@
-<!-- PROJECT SHIELDS -->
-[![Contributors][contributors-badge]][contributors]
-[![Release][release-badge]][release]
-
-
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -14,6 +8,12 @@
 # Memory Lane
   
 **A trip to the Past**
+
+
+
+<!-- PROJECT SHIELDS -->
+[![Contributors][contributors-badge]][contributors]
+[![Release][release-badge]][release]
 
 An Android mobile application that uses quiz-like exercises to provide reminiscence therapy for people with dementia.
 
@@ -188,10 +188,10 @@ The user can view a pie chart that shows which question sets they recognise best
 ## Contributors
 
 - Andrei Harbachov ([GitHub][andrei-github] · [LinkedIn][andrei-linkedin])
-- Felicia Samatha
+- Felicia Samatha ([GitHub][felicia-github])
 - Karanbir Singh
 - Yuling Su
-- Yulong (Lucas) Wu
+- Yulong (Lucas) Wu ([LinkedIn][lucas-linkedin])
 
 
 
@@ -215,5 +215,7 @@ The user can view a pie chart that shows which question sets they recognise best
 [androidchart]: https://github.com/PhilJay/MPAndroidChart
 [imagepicker]: https://github.com/Dhaval2404/ImagePicker
 
-[andrei-linkedin]: https://www.linkedin.com/in/andrei-harbachov/
 [andrei-github]: https://github.com/andreihar
+[andrei-linkedin]: https://www.linkedin.com/in/andrei-harbachov/
+[felicia-github]: https://github.com/felisamatha
+[lucas-linkedin]: https://www.linkedin.com/in/luk23/
