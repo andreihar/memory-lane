@@ -6,7 +6,7 @@
   </a>
   
 # Memory Lane
-  
+
 **A trip to the Past**
 
 
@@ -54,8 +54,7 @@ An Android mobile application that uses quiz-like exercises to provide reminisce
         <li><a href="#spaced-repetition">Spaced Repetition</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Screenshots</a></li>
-    <li><a href="#roadmap">Contributors</a></li>
+    <li><a href="#contributors">Contributors</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
