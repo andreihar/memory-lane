@@ -215,6 +215,6 @@ The user can view a pie chart that shows which question sets they recognise best
 [imagepicker]: https://github.com/Dhaval2404/ImagePicker
 
 [andrei-github]: https://github.com/andreihar
-[andrei-linkedin]: https://www.linkedin.com/in/andrei-harbachov/
+[andrei-linkedin]: https://www.linkedin.com/in/andreihar/
 [felicia-github]: https://github.com/felisamatha
 [lucas-linkedin]: https://www.linkedin.com/in/luk23/
