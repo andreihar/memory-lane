@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/andreihar/memory-lane">
-    <img src="app/src/main/res/drawable-v24/logo.png" alt="Logo" width="80" height="80">
+    <img src="readme/logo.svg" alt="Logo" width="49" height="62">
   </a>
   
 # Memory Lane
@@ -101,7 +101,7 @@ The quiz continues until there are no more unanswered question sets or until use
 
 ### Text-to-speech
 
-To ensure that the application supports those with moderate to moderately severe dementia who have difficulties reading, text-to-speech (TTS) is implemented in the app. The TTS reads out all questions and answers options as users complete the quiz. When TTS is reading options, corresponding buttons are highlighted to indicate which button to press to select the option. Users can hold down the option button to have the TTS read out that option again or click on the question text box to repeat the question. The feature is implemented by utilizing Google's free Cloud Text-to-Speech service.
+To ensure that the application supports those with moderate to moderately severe dementia who have difficulties reading, text-to-speech (TTS) is implemented in the app. The TTS reads out all questions and answers options as users complete the quiz. When TTS is reading options, corresponding buttons are highlighted to indicate which button to press to select the option. Users can hold down the option button to have the TTS read out that option again or click on the question text box to repeat the question. The feature is implemented by utilising Google's free Cloud Text-to-Speech service.
 
 ### Questions Creation
 
